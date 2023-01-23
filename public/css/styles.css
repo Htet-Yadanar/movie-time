@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #2f363e;
+    height: 100vh;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 5px 0;
+}
+
+.nav-bar{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    max-width: 1300px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 0 30px;
+}
+
+.nav-links a:hover{
+    color: blue;
+}
+
+.form{
+    width: 80%;
+    max-width: 600px;
+    /* background-color: #F0F0F0; */
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: black;
+    color:white;
+    /* border-radius: 8%; */
+    box-shadow: 25px 25px 75px rgba(0, 0, 0,0.75),
+    10px 10px 70px rgba(0, 0, 0,0.25),
+    inset 5px 5px 10px rgba(0, 0, 0,0.5),
+    inset 5px 5px 20px rgba(0, 0, 0,0.2),
+    inset -5px -5px 15px rgba(0, 0, 0,0.75);
+}
+
+.form h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 0 10px;
+}
+
+.input input{
+    height: 40px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.input p{
+    font-size: 14px;
+}
+
+.form button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: #b1aeae;
+    border-radius: 5px;
+    cursor: pointer;
+    float:right;
+}
+
+.button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: #b1aeae;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form table{
+    margin-top: 20px;
+}
+
+select{
+    border: none !important;
+    background-color: #b1aeae !important;
+    border-radius: 5px !important;
+}
+
+.form h3{
+    font-size: 25px;
+    color: #0078D7;
+    text-align: center;
+}
+
+.selectors{
+    display: block;
+    white-space: nowrap;
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+  }
+.logout{
+    border: none;
+    background: transparent;
+    font-size: var(--fs-md);
+    color:var(--text-x-dark-gray);
+    font-weight: 400;
+    color:white;
+    font-size: 16px;
+}
+.logout:hover{
+    color: blue;
+}
+.disabled-link {
+    pointer-events: none;
+  }
+@media  screen and (max-width: 800px) {
+    a{
+        font-size: 13px;
+    }
+
+    .nav-links{
+        gap: 0 15px;
+    }
+}
