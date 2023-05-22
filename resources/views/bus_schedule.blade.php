@@ -5,34 +5,18 @@
 <div class="container ">
 
     <div class="row d-flex justify-content-center ">
-      <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+      <div class="d-flex col-lg-6 col-md-12 col-sm-12 mt-5 align-items-center justify-content-center">
         <div class="whole-page">
           <div class="hands sc" id="sc"><i></i></div>
           <div class="hands mn" id="minutes"></div>
           <div class="hands hr" id="hours"></div>
   
-      <div class="clock">
-          <span style="--i:1;"><b>|</b></span>
-          <span style="--i:2;"><b>|</b></span>
-          <span style="--i:3;"><b class="number">3</b></span>
-          <span style="--i:4;"><b>|</b></span>
-          <span style="--i:5;"><b>|</b></span>
-          <span style="--i:6;"><b class="number">6</b></span>
-          <span style="--i:7;"><b>|</b></span>
-          <span style="--i:8;"><b>|</b></span>
-          <span style="--i:9;"><b class="number">9</b></span>
-          <span style="--i:10;"><b>|</b></span>
-          <span style="--i:11;"><b>|</b></span>
-          <span style="--i:12;"><b class="number">12</b></span>
-      </div>
-  
-      <div class="digital">
-          <div id="h">00</div>
-          <div id="m">00</div>
-          <div id="s">00</div>
-          <div id="a">00</div>
-      </div>
-
+          <div class="digital">
+              <div id="h" class="col-2">00</div>
+              <div id="m" class="col-2">00</div>
+              <div id="s" class="col-2">00</div>
+              <div id="a" class="col-2">00</div>
+          </div>
         </div>
 
       </div>
@@ -141,7 +125,7 @@
             </div>
        <div class="row justify-content-center">
         <div class="col-10 mt-4 ">
-          <p class="text-danger">*Time is used in the 24-hour notation in the form*</p>
+          <p class="text-danger info-text">*Time is used in the 24-hour notation in the form*</p>
         </div>
         <div class="col-2 ">
           <button class="float-right" id="save" type="submit">Save</button>

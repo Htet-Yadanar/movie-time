@@ -18,6 +18,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 10%;
+
 }
 .clock{
     width: 300px;
@@ -117,10 +118,12 @@
 
 .digital div{
     position: relative;
-    width: 60px;
+    width: 150px;
     text-align: center;
     font-weight: 500;
     opacity: 0.3;
+    font-size: 60px;
+    font-family: 'Orbitron', sans-serif !important;
 }
 .digital div:nth-child(1)::after,
 .digital div:nth-child(2)::after,
@@ -133,13 +136,13 @@
 }
 
 .digital div:nth-child(1){
-    color:yellowgreen
+    color:#FEC84D;
 }
 .digital div:nth-child(2){
-    color:yellowgreen
+    color:#00B1B0
 }
 .digital div:nth-child(3){
-    color:red
+    color:#FEC84D;
 }
 .todayD{
     position: absolute;
@@ -147,4 +150,16 @@
     top:20%;
     color:pink;
     opacity: 0.3;
+}
+#h,#m,#s,#a {
+    text-decoration: underline;
+}
+
+#a{
+    color: #00B1B0;
+    text-decoration: none;
+}
+
+.info-text{
+    color: #FEC84D !important;
 }

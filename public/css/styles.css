@@ -8,16 +8,24 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: #2f363e;
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: black;
     height: 100vh;
 }
 
 a{
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-size: 16px;
 }
-
+.logo {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+}
 
 table {
     table-layout: fixed;
@@ -57,7 +65,7 @@ th, td {
 }
 
 .nav-links a:hover{
-    color: blue;
+    color: #292E49;
 }
 
 .form{
@@ -67,7 +75,7 @@ th, td {
     padding: 20px;
     border-radius: 10px;
     margin: auto;
-    background-color: black;
+    background-color: #536976;
     color:white;
     /* border-radius: 8%; */
     box-shadow: 25px 25px 75px rgba(0, 0, 0,0.75),
@@ -152,6 +160,10 @@ th, td {
     color:white;
     font-size: 16px;
 }
+.digital {
+    font-family: 'Orbitron', sans-serif !important;
+}
+
 .logout:hover{
     color: blue;
 }
@@ -166,4 +178,7 @@ th, td {
     .nav-links{
         gap: 0 15px;
     }
+}
+.bus_info td,th{
+    border: 1px solid black;
 }

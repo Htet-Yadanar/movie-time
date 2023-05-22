@@ -8,13 +8,17 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
     <link href="{{ asset('css/clock-style.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="row mb-5">
         <div class="col-12">
             <div class="nav-bar">
                 <div class="nav-links-container">
-                    <a href="{{ route('time_schedule') }}">Movie Time</a>
+                    <a href="{{ route('time_schedule') }}" class="logo"><img src="{{ asset('image/logo.png') }}" alt="" width="100px" height="60px">Movie</a>
                     <div class="nav-links">
                         @auth
                         <a href="{{ route('time_schedule') }}">Save Time Schedule</a>
